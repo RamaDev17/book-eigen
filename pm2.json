@@ -1,0 +1,10 @@
+{
+    "apps": [
+      {
+        "name": "fg-hr-be",
+        "script": "bun",
+        "args": "run start"
+      }
+    ]
+  }
+  
