@@ -1,6 +1,6 @@
 import swaggerJsdoc from 'swagger-jsdoc'
 
-const url = process.env.BE_URL != null ? process.env.PORT != null ? process.env.BE_URL + ':' + process.env.PORT : process.env.BE_URL : 'http://localhost:3334'
+const url = process.env.BE_URL != null ? process.env.BE_URL : 'http://localhost:3334'
 
 const options = {
     definition: {
