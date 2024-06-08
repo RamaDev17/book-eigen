@@ -297,7 +297,7 @@ export const deletebookBorrowed = async (req: Request, res: Response, next: Next
     } catch (error) {
         return res.status(400).json({
             message: 'delete book borrowed failed',
-            error: "BB05 : " + String((error as Error).message)
+            error: "BB06 : " + String((error as Error).message)
         })
     }
 }

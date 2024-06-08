@@ -127,7 +127,7 @@ export const detailBook = async (req: Request, res: Response, next: NextFunction
         })
 
         return res.status(200).json({
-            message: 'get book success',
+            message: 'get detail book success',
             data
         })
     } catch (error) {
