@@ -1,7 +1,7 @@
 {
     "apps": [
       {
-        "name": "fg-hr-be",
+        "name": "book",
         "script": "bun",
         "args": "run start"
       }
