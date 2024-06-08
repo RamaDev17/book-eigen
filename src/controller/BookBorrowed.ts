@@ -321,6 +321,12 @@ export const returnBookBorrowed = async (req: Request, res: Response, next: Next
             });
         }
 
+        if (borrowedBook.borrow_date > returnDate) {
+            return res.status(400).json({
+                message: 'Return date cannot be earlier than borrow date.',
+            })
+        }
+
         // Hitung selisih hari antara tanggal peminjaman dan pengembalian
         const borrowDate = borrowedBook.borrow_date;
         const currentDate = returnDate;
